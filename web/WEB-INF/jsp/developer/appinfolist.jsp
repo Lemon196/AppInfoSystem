@@ -20,7 +20,7 @@
 						<div class="form-group">
 							<label class="control-label col-md-3 col-sm-3 col-xs-12">软件名称</label>
 							<div class="col-md-6 col-sm-6 col-xs-12">
-								<input name="querySoftwareName" type="text" class="form-control col-md-7 col-xs-12" value="${querySoftwareName}">
+								<input name="querySoftwareName" type="text" class="form-control col-md-7 col-xs-12" value="${pageInfo.querySoftwareName}">
 							</div>
 						</div>
 					</li>
@@ -165,10 +165,10 @@
 								</tr>
 							</thead>
 							<tbody>
-								<c:forEach var="appInfo" items="${pageInfo.getList()}" varStatus="status">
+								<c:forEach var="appInfo" items="${pageInfo.PageData}" varStatus="status">
 									<tr role="row" class="odd">
 										<td tabindex="0" class="sorting_1">${appInfo.softwareName}</td>
-										<td>${appInfo.APKName }</td>
+										<td>${appInfo.apkName }</td>
 										<td>${appInfo.softwareSize }</td>
 										<td>${appInfo.flatformName }</td>
 										<td>${appInfo.categoryLevel1Name } -> ${appInfo.categoryLevel2Name } -> ${appInfo.categoryLevel3Name }</td>
@@ -197,7 +197,7 @@
                         </li>
                         <li><a class="modifyVersion" 
 											appinfoid="${appInfo.id }" versionid="${appInfo.versionId }" status="${appInfo.status }" 
-											statusname="${appInfo.statusName }"											
+											statusname="${appInfo.statusName }"
 											data-toggle="tooltip" data-placement="top" title="" data-original-title="修改APP最新版本信息">修改版本</a>
                         </li>
                         <li><a  class="modifyAppInfo" 

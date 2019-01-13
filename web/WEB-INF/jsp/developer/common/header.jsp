@@ -15,24 +15,24 @@
 <title>APP开发者平台</title>
 
 	<!-- Bootstrap -->
-	<link href="${pageContext.request.contextPath }/myProjectAssets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/statics/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Font Awesome -->
-	<link href="${pageContext.request.contextPath }/myProjectAssets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/statics/css/font-awesome.min.css" rel="stylesheet">
 	<!-- NProgress -->
-	<link href="${pageContext.request.contextPath }/myProjectAssets/css/nprogress.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/statics/css/nprogress.css" rel="stylesheet">
 	<!-- iCheck -->
-	<link href="${pageContext.request.contextPath }/myProjectAssets/css/green.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/statics/css/green.css" rel="stylesheet">
 	<!-- bootstrap-progressbar -->
-	<link href="${pageContext.request.contextPath }/myProjectAssets/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/statics/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
 	<!-- JQVMap -->
-	<link href="${pageContext.request.contextPath }/myProjectAssets/css/jqvmap.min.css" rel="stylesheet" />
-	<link href="${pageContext.request.contextPath }/myProjectAssets/css/dropzone.min.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/statics/css/jqvmap.min.css" rel="stylesheet" />
+	<link href="${pageContext.request.contextPath }/statics/css/dropzone.min.css" rel="stylesheet">
 	<!-- Custom Theme Style -->
-	<link href="${pageContext.request.contextPath }/myProjectAssets/css/custom.min.css"	rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/statics/css/custom.min.css"	rel="stylesheet">
 	
 	<!-- add localcss 2016-8-18 -->
-	<link href='${pageContext.request.contextPath }/myProjectAssets/localcss/appinfoadd.css' rel='stylesheet'>
-	<link href='${pageContext.request.contextPath }/myProjectAssets/localcss/appinfolist.css' rel='stylesheet'>
+	<link href='${pageContext.request.contextPath }/statics/localcss/appinfoadd.css' rel='stylesheet'>
+	<link href='${pageContext.request.contextPath }/statics/localcss/appinfolist.css' rel='stylesheet'>
 </head>
 <body class="nav-md footer_fixed">
 	<div class="container body">
@@ -51,7 +51,7 @@
 					<div class="profile">
 						<div class="profile_pic">
 							<img
-								src="${pageContext.request.contextPath }/myProjectAssets/images/img.jpg"
+								src="${pageContext.request.contextPath }/statics/images/img.jpg"
 								alt="..." class="img-circle profile_img">
 						</div>
 						<div class="profile_info">
@@ -101,7 +101,7 @@
 						</a> <a data-toggle="tooltip" data-placement="top" title="Lock"> <span
 							class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
 						</a> <a data-toggle="tooltip" data-placement="top" title="Logout"
-							href="${pageContext.request.contextPath }/dev/logout"> <span
+							href="${pageContext.request.contextPath }/devLoginController/logout"> <span
 							class="glyphicon glyphicon-off" aria-hidden="true"></span> </a>
 					</div>
 					<!-- /menu footer buttons -->
@@ -121,11 +121,11 @@
 							<li class=""><a href="javascript:;"
 								class="user-profile dropdown-toggle" data-toggle="dropdown"
 								aria-expanded="false"> <img
-									src="${pageContext.request.contextPath }/myProjectAssets/images/img.jpg"
+									src="${pageContext.request.contextPath }/statics/images/img.jpg"
 									alt="">${devUserSession.devCode} <span
 									class=" fa fa-angle-down"></span> </a>
 								<ul class="dropdown-menu dropdown-usermenu pull-right">
-									<li><a href="devLoginController/logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+									<li><a href="/devLoginController/logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
 									</li>
 								</ul></li>
 
@@ -134,28 +134,28 @@
 								<ul id="menu1" class="dropdown-menu list-unstyled msg_list"
 									role="menu">
 									<li><a> <span class="image"><img
-												src="${pageContext.request.contextPath }/myProjectAssets/images/img.jpg"
+												src="${pageContext.request.contextPath }/statics/images/img.jpg"
 												alt="Profile Image" />
 										</span> <span> <span>John Smith</span> <span class="time">3
 													mins ago</span> </span> <span class="message"> Film festivals used
 												to be do-or-die moments for movie makers. They were where...
 										</span> </a></li>
 									<li><a> <span class="image"><img
-												src="${pageContext.request.contextPath }/myProjectAssets/images/img.jpg"
+												src="${pageContext.request.contextPath }/statics/images/img.jpg"
 												alt="Profile Image" />
 										</span> <span> <span>John Smith</span> <span class="time">3
 													mins ago</span> </span> <span class="message"> Film festivals used
 												to be do-or-die moments for movie makers. They were where...
 										</span> </a></li>
 									<li><a> <span class="image"><img
-												src="${pageContext.request.contextPath }/myProjectAssets/images/img.jpg"
+												src="${pageContext.request.contextPath }/statics/images/img.jpg"
 												alt="Profile Image" />
 										</span> <span> <span>John Smith</span> <span class="time">3
 													mins ago</span> </span> <span class="message"> Film festivals used
 												to be do-or-die moments for movie makers. They were where...
 										</span> </a></li>
 									<li><a> <span class="image"><img
-												src="${pageContext.request.contextPath }/myProjectAssets/images/img.jpg"
+												src="${pageContext.request.contextPath }/statics/images/img.jpg"
 												alt="Profile Image" />
 										</span> <span> <span>John Smith</span> <span class="time">3
 													mins ago</span> </span> <span class="message"> Film festivals used

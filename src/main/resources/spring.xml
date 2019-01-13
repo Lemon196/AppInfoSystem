@@ -41,7 +41,7 @@
     </bean>
     <!--配置mapper自动扫描操作(由Spring来管理MyBatis中的Mapper文件)-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="cn.com.guimei.dao"/>
+        <property name="basePackage" value="cn.appsys.dao"/>
     </bean>
     <!--由Spring来管理MyBatis-->
     <!-- 配置mybatis SqlSessionFactoryBean -->
